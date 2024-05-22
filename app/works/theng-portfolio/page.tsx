@@ -31,7 +31,7 @@ const ThengPortfolioPage = () => {
             className="w-auto h-auto mt-20"
           />
           <ProjectChallangeApproach
-            challange="Crafting a digital showcase that truly captures the essence of Theng's photography was our primary challenge. We needed to create a platform that not only displayed the images beautifully but also reflected the photographer's unique style and vision. The website had to strike a delicate balance between minimalism and functionality, ensuring that the photographs remained the focal point while providing an intuitive and engaging user experience."
+            challange="Crafting a digital showcase that truly capture the essence of Theng's photography was our primary challenge. We needed to create a platform that not only displayed the images beautifully but also reflected the photographer's unique style and vision. The website had to strike a delicate balance between minimalism and functionality, ensuring that the photographs remained the focal point while providing an intuitive and engaging user experience."
             approach={[
               "Initiated the project with an in-depth client consultation to align the website's design with Theng's unique style and professional goals.",
               "Implemented a clean, minimalist design that puts the focus squarely on the photography, allowing Theng's work to speak for itself.",
