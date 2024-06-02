@@ -94,7 +94,12 @@ const Model = ({ z }) => {
     };
   }, []);
 
-  return <div ref={mountRef} className="w-[500px] md:h-[400px] lg:h-[500px]" />;
+  return (
+    <div
+      ref={mountRef}
+      className="md:w-[500px] w-[300px] h-[400px] lg:h-[500px]"
+    />
+  );
 };
 
 export default Model;

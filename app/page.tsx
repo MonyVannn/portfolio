@@ -14,19 +14,21 @@ const RoboroughCFItalic = localFont({
 export default function Home() {
   return (
     <div className="h-screen flex flex-col justify-between">
-      <div className="flex items-center justify-center gap-5 h-[200px] mt-[100px]">
+      <div className="flex items-center justify-center md:gap-5 gap-2 h-[200px] mt-[100px]">
         <h1
           className={cn(
-            "md:text-[120px] lg:text-[200px] text-[#007167]",
+            "md:text-[120px] lg:text-[200px] text-[70px] text-[#007167]",
             RoboroughCFItalic.className,
           )}
         >
           Mony
         </h1>
-        <h1 className="md:text-[120px] lg:text-[200px] text-[#007167]">Vann</h1>
+        <h1 className="md:text-[120px] lg:text-[200px] text-[70px] text-[#007167]">
+          Vann
+        </h1>
       </div>
 
-      <div className="w-full flex lg:flex-row flex-col items-center justify-around ">
+      <div className="w-full flex lg:flex-row flex-col items-center justify-around md:pt-0 pt-10">
         <div className="flex flex-col items-center space-y-12">
           <Star />
           <h1 className="w-[300px] text-[#FF8031] uppercase md:text-sm lg:text-[18px] leading-5  text-center text-balance">

@@ -22,8 +22,15 @@ export default function Home() {
             onClick={() => {
               setIsActive(!isActive);
             }}
+            className={styles.button}
           >
             <AnimatedHamburgerButton />
+            <div
+              className={cn(
+                `${styles.burger} ${isActive ? styles.burgerActive : ""}`,
+                "md:hidden block",
+              )}
+            ></div>
           </div>
         </div>
       </div>
@@ -45,7 +52,7 @@ const AnimatedHamburgerButton = () => {
         initial={false}
         animate={activeButton ? "open" : "closed"}
         onClick={() => setActiveButton((pv) => !pv)}
-        className="relative h-20 w-20 rounded-full bg-white/0 transition-colors hover:bg-white/20"
+        className="md:block hidden relative h-20 w-20 rounded-full bg-white/0 transition-colors hover:bg-white/20"
       >
         <motion.span
           variants={VARIANTS.top}
