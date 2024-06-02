@@ -22,12 +22,8 @@ export default function Home() {
             onClick={() => {
               setIsActive(!isActive);
             }}
-          // className={styles.button}
           >
             <AnimatedHamburgerButton />
-            {/* <div */}
-            {/*   className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`} */}
-            {/* ></div> */}
           </div>
         </div>
       </div>
