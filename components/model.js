@@ -97,7 +97,7 @@ const Model = ({ z }) => {
   return (
     <div
       ref={mountRef}
-      className="md:w-[500px] w-[300px] h-[400px] lg:h-[500px]"
+      className="md:w-[500px] w-[300px] h-[400px] 2xl:h-[600px]"
     />
   );
 };

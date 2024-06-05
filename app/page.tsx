@@ -3,7 +3,6 @@
 import localFont from "next/font/local";
 import { twMerge as cn } from "tailwind-merge";
 
-import Navbar from "@/components/header";
 import Model from "@/components/model";
 import Star from "@/components/icons/star";
 
@@ -28,10 +27,10 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="w-full flex lg:flex-row flex-col items-center justify-around md:pt-0 pt-10">
+      <div className="w-full flex lg:flex-row flex-col items-center justify-around md:pt-0 p-10 pb-0">
         <div className="flex flex-col items-center space-y-12">
           <Star />
-          <h1 className="w-[300px] text-[#FF8031] uppercase md:text-sm lg:text-[18px] leading-5  text-center text-balance">
+          <h1 className="w-[300px] text-[#FF8031] uppercase text-sm 2xl:text-lg leading-5  text-center text-balance">
             MONYVANN (HE/HIM) AKA ZEN様 IS AN INDEPENDENT WEB-DEVELOPER FROM
             PHNOM PENH, CAMBODIA
           </h1>
@@ -42,15 +41,10 @@ export default function Home() {
             EXPERIENCES.
           </h1>
         </div>
-        <div className="lg:block hidden">
-          <Model z="4.3" />
-        </div>
-        <div className="lg:hidden block">
-          <Model z="5" />
-        </div>
+        <Model z="5" />
         <div className="lg:flex hidden flex-col items-center space-y-12">
           <Star />
-          <h1 className="w-[300px] leading-5 text-[#FF8031] uppercase text-lg text-center text-balance">
+          <h1 className="w-[300px] leading-5 text-[#FF8031] uppercase text-sm 2xl:text-lg text-center text-balance">
             PASSIONATE ABOUT CREATING UNFORGETTABLE AND BEAUTIFUL DIGITAL
             EXPERIENCES.
           </h1>

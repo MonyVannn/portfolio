@@ -41,6 +41,12 @@ export default function Home() {
 
 const AnimatedHamburgerButton = () => {
   const [activeButton, setActiveButton] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (activeButton) setActiveButton(false);
+  }, [pathname]);
+
   return (
     <MotionConfig
       transition={{
