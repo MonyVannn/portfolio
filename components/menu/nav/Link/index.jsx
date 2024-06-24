@@ -1,7 +1,8 @@
 import styles from "./style.module.scss";
-import Link from "next/link";
+import TransitionLink from "next/link";
 import { motion } from "framer-motion";
 import { slide, scale } from "../../anim";
+import TransitionLint from "@/components/TransitionLint";
 
 export default function Index({ data, isActive, setSelectedIndicator }) {
   const { title, href, index } = data;
@@ -23,7 +24,9 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
         animate={isActive ? "open" : "closed"}
         className={styles.indicator}
       ></motion.div>
-      <Link href={href}>{title}</Link>
+      <TransitionLink href={href} label={"dwa"}>
+        {title}
+      </TransitionLink>
     </motion.div>
   );
 }
