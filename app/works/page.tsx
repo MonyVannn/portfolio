@@ -19,13 +19,13 @@ const projects = [
     color: "#000000",
   },
   {
-    title: "LOODEN CREATIVE AGENCY",
+    title: "LOODEN CREATIVE",
     src: "looden-main.jpeg",
     description: "Design & Development",
     color: "#8C8C8C",
   },
   {
-    title: "THENG PHOTOGRAPHY PORTOFOLIO",
+    title: "THENG PORTOFOLIO",
     src: "theng-main.jpeg",
     description: "Design & Development",
     color: "#EFE8D3",
@@ -39,10 +39,21 @@ const projects = [
 ];
 
 const variants = {
-  initial: { opacity: 0, y: 50 },
-  enter: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
-  exit: { opacity: 0, y: -50, transition: { duration: 0.5 } },
+  initial: { opacity: 0, y: 20 },
+  enter: { opacity: 1, y: 0, transition: { duration: 0.2, delay: 0.05 } },
+  exit: { opacity: 0, y: -20, transition: { duration: 0.2 } },
 };
+
+function debounce<T extends (...args: any[]) => void>(
+  func: T,
+  wait: number
+): (...args: Parameters<T>) => void {
+  let timeout: NodeJS.Timeout;
+  return (...args: Parameters<T>) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), wait);
+  };
+}
 
 const Works = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
@@ -61,18 +72,17 @@ const Works = () => {
     }
 
     setWork([firstHalf, secondHalf]);
-    console.log(work);
   };
 
   return (
-    <div className="h-screen flex flex-col justify-between">
+    <div className="max-h-screen flex flex-col justify-between">
       <div className="flex lg:flex-row flex-col items-center justify-around px-20 mt-[100px]">
         <div className="lg:block hidden">
           <h3 className="w-[200px] text-[#FF8031] uppercase text-[14px] 2xl:text-[18px] leading-5 text-center text-balance">
             SELECTED WORKS I HAVE DONE SINCE 2020
           </h3>
         </div>
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode={"wait"}>
           {work[0] ? (
             <motion.div
               key={work[0]}
@@ -87,9 +97,10 @@ const Works = () => {
                 <span
                   className={cn(
                     "text-[#FF8031] -pt-10",
-                    RoboroughCFItalic.className,
+                    RoboroughCFItalic.className
                   )}
                 >
+                  <br />
                   {work[1]}
                 </span>
               </p>
@@ -106,7 +117,7 @@ const Works = () => {
               <h1
                 className={cn(
                   "md:text-[57px] lg:text-[110px] text-[40px] text-[#007167]",
-                  RoboroughCFItalic.className,
+                  RoboroughCFItalic.className
                 )}
               >
                 My
@@ -128,7 +139,7 @@ const Works = () => {
           </h3>
         </div>
       </div>
-      <main className="flex h-[100vh] items-center justify-center">
+      <main className="flex items-center justify-center mt-[100px]">
         <div className="w-full md:px-20 px-10 md:grid grid-cols-2 lg:gap-x-32 gap-x-16">
           {projects.map((project, index) => {
             return (
