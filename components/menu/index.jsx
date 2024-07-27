@@ -28,7 +28,7 @@ export default function Home() {
             <div
               className={cn(
                 `${styles.burger} ${isActive ? styles.burgerActive : ""}`,
-                "md:hidden block",
+                "md:hidden block"
               )}
             ></div>
           </div>
@@ -58,13 +58,13 @@ const AnimatedHamburgerButton = () => {
         initial={false}
         animate={activeButton ? "open" : "closed"}
         onClick={() => setActiveButton((pv) => !pv)}
-        className="md:block hidden relative h-20 w-20 rounded-full bg-white/0 transition-colors hover:bg-white/20"
+        className="md:block hidden relative h-20 w-20 p-10 mt-3 rounded-full bg-white/0 transition-colors hover:bg-white/20"
       >
         <motion.span
           variants={VARIANTS.top}
           className={cn(
             "absolute h-0.5 w-10 bg-[#292929]",
-            activeButton ? "bg-white" : "bg-[#292929]",
+            activeButton ? "bg-white" : "bg-[#292929]"
           )}
           style={{ y: "-50%", left: "50%", x: "-50%", top: "35%" }}
         />
@@ -72,7 +72,7 @@ const AnimatedHamburgerButton = () => {
           variants={VARIANTS.middle}
           className={cn(
             "absolute h-0.5 w-10 bg-[#292929]",
-            activeButton ? "bg-white" : "bg-[#292929]",
+            activeButton ? "bg-white" : "bg-[#292929]"
           )}
           style={{ left: "50%", x: "-50%", top: "50%", y: "-50%" }}
         />
@@ -80,7 +80,7 @@ const AnimatedHamburgerButton = () => {
           variants={VARIANTS.bottom}
           className={cn(
             "absolute h-0.5 w-5 bg-[#292929]",
-            activeButton ? "bg-white" : "bg-[#292929]",
+            activeButton ? "bg-white" : "bg-[#292929]"
           )}
           style={{
             x: "-50%",

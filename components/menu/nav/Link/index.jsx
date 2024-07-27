@@ -2,7 +2,6 @@ import styles from "./style.module.scss";
 import TransitionLink from "next/link";
 import { motion } from "framer-motion";
 import { slide, scale } from "../../anim";
-import TransitionLint from "@/components/TransitionLint";
 
 export default function Index({ data, isActive, setSelectedIndicator }) {
   const { title, href, index } = data;
