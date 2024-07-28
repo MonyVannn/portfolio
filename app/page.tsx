@@ -17,7 +17,7 @@ export default function Home() {
         <h1
           className={cn(
             "md:text-[120px] lg:text-[200px] text-[70px] text-[#007167]",
-            RoboroughCFItalic.className,
+            RoboroughCFItalic.className
           )}
         >
           Mony

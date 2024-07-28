@@ -14,7 +14,13 @@ const Navbar = () => {
       </div>
       <div className="w-1/3 md:block hidden">
         <a href="/">
-          <Image src="/logo.png" alt="logo" width={60} height={60} />
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={60}
+            height={60}
+            className="w-auto h-auto"
+          />
         </a>
       </div>
       <div className="relative">

@@ -6,6 +6,8 @@ import { useState } from "react";
 import Project from "@/components/project";
 import Modal from "@/components/modal";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const RoboroughCFItalic = localFont({
   src: "../../public/fonts/roxboroughitalic.woff2",
@@ -13,28 +15,32 @@ const RoboroughCFItalic = localFont({
 
 const projects = [
   {
+    title: "REQUEST ENGINE",
+    src: "ecom-main.jpeg",
+    description: "Development",
+    color: "#706D63",
+    href: "request-engine",
+  },
+  {
     title: "ID MANAGEMENT SYSTEM",
     src: "card-main.jpeg",
     description: "Development",
-    color: "#000000",
+    color: "#CDD8E6",
+    href: "id-management-system",
   },
   {
     title: "LOODEN CREATIVE",
     src: "looden-main.jpeg",
     description: "Design & Development",
     color: "#8C8C8C",
+    href: "looden-creative",
   },
   {
-    title: "THENG PORTOFOLIO",
+    title: "THENG PORTFOLIO",
     src: "theng-main.jpeg",
     description: "Design & Development",
     color: "#EFE8D3",
-  },
-  {
-    title: "E-COMMERCE PLATFORM",
-    src: "ecom-main.jpeg",
-    description: "Development",
-    color: "#706D63",
+    href: "theng-portfolio",
   },
 ];
 
@@ -43,17 +49,6 @@ const variants = {
   enter: { opacity: 1, y: 0, transition: { duration: 0.2, delay: 0.05 } },
   exit: { opacity: 0, y: -20, transition: { duration: 0.2 } },
 };
-
-function debounce<T extends (...args: any[]) => void>(
-  func: T,
-  wait: number
-): (...args: Parameters<T>) => void {
-  let timeout: NodeJS.Timeout;
-  return (...args: Parameters<T>) => {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func(...args), wait);
-  };
-}
 
 const Works = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
@@ -79,7 +74,7 @@ const Works = () => {
       <div className="flex lg:flex-row flex-col items-center justify-around px-20 mt-[100px]">
         <div className="lg:block hidden">
           <h3 className="w-[200px] text-[#FF8031] uppercase text-[14px] 2xl:text-[18px] leading-5 text-center text-balance">
-            SELECTED WORKS I HAVE DONE SINCE 2020
+            SELECTED WORKS I HAVE DONE SINCE 2022
           </h3>
         </div>
         <AnimatePresence mode={"wait"}>
@@ -143,14 +138,16 @@ const Works = () => {
         <div className="w-full md:px-20 px-10 md:grid grid-cols-2 lg:gap-x-32 gap-x-16">
           {projects.map((project, index) => {
             return (
-              <Project
-                hoverData={setWorkData}
-                index={index}
-                title={project.title}
-                setModal={setModal}
-                key={index}
-                description={project.description}
-              />
+              <Link href={`/works/${project.href}`} key={index}>
+                <Project
+                  hoverData={setWorkData}
+                  index={index}
+                  title={project.title}
+                  setModal={setModal}
+                  key={index}
+                  description={project.description}
+                />
+              </Link>
             );
           })}
         </div>

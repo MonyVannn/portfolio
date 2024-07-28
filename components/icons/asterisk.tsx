@@ -1,7 +1,13 @@
-const Asterisk = () => {
+import { twMerge as cn } from "tailwind-merge";
+
+interface Props {
+  className?: string;
+}
+
+const Asterisk = ({ className }: Props) => {
   return (
     <svg
-      className="nav-logo__rotate colorMobile"
+      className={cn("nav-logo__rotate colorMobile", className)}
       width="24"
       height="24"
       viewBox="0 0 24 24"
