@@ -28,7 +28,7 @@ export default function Home() {
             <div
               className={cn(
                 `${styles.burger} ${isActive ? styles.burgerActive : ""}`,
-                "md:hidden block"
+                "absolute h-20 w-20 p-10 mt-3 rounded-full bg-white/0 transition-colors hover:bg-white/20"
               )}
             ></div>
           </div>
@@ -58,7 +58,7 @@ const AnimatedHamburgerButton = () => {
         initial={false}
         animate={activeButton ? "open" : "closed"}
         onClick={() => setActiveButton((pv) => !pv)}
-        className="md:block hidden relative h-20 w-20 p-10 mt-3 rounded-full bg-white/0 transition-colors hover:bg-white/20"
+        className="relative h-20 w-20 p-10 mt-3 rounded-full bg-white/0 transition-colors hover:bg-white/20"
       >
         <motion.span
           variants={VARIANTS.top}

@@ -111,13 +111,13 @@ const Works = () => {
             >
               <h1
                 className={cn(
-                  "md:text-[57px] lg:text-[110px] text-[40px] text-[#007167]",
+                  "text-[57px] lg:text-[110px] text-[#007167]",
                   RoboroughCFItalic.className
                 )}
               >
                 My
               </h1>
-              <h1 className="md:text-[57px] lg:text-[100px] text-[40px] text-[#007167]">
+              <h1 className="text-[57px] lg:text-[100px] text-[#007167]">
                 Works
               </h1>
             </motion.div>
@@ -125,7 +125,7 @@ const Works = () => {
         </AnimatePresence>
         <div className="lg:hidden block">
           <h3 className="w-[200px] text-[#FF8031] uppercase text-[14px] 2xl:text-[18px] leading-5 text-center text-balance">
-            SELECTED WORKS I HAVE DONE SINCE 2020
+            SELECTED WORKS I HAVE DONE SINCE 2022
           </h3>
         </div>
         <div className="lg:block hidden">

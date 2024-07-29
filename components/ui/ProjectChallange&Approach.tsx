@@ -19,27 +19,27 @@ const ProjectChallangeApproach = ({
   approach,
 }: ProjectChallangeApproachProps) => {
   return (
-    <div className="mt-10 grid grid-cols-2 gap-20">
+    <div className="mt-10 md:grid grid-cols-2 gap-20">
       <div>
-        <h1 className="text-[#017167] text-5xl font-medium">
+        <h1 className="text-[#017167] text-4xl md:text-5xl font-medium">
           Chall<span className={cn(RoboroughCFItalic.className)}>ange</span>
         </h1>
         <p
           className={cn(
-            "mt-5 text-lg font-medium -tracking-[0.040rem]",
+            "mt-5 text-base md:text-lg font-medium -tracking-[0.040rem]",
             montreal.className
           )}
         >
           {challange}
         </p>
       </div>
-      <div>
-        <h1 className="text-[#017167] text-5xl font-medium">
+      <div className="mt-10 md:mt-0">
+        <h1 className="text-[#017167] text-4xl md:text-5xl font-medium">
           Appr<span className={cn(RoboroughCFItalic.className)}>oach</span>
         </h1>
         <ul
           className={cn(
-            "mt-5 ml-5 list-decimal list-outside text-lg font-medium -tracking-[0.040rem] space-y-2",
+            "mt-5 ml-5 list-decimal list-outside text-base md:text-lg font-medium -tracking-[0.040rem] space-y-2",
             montreal.className
           )}
         >

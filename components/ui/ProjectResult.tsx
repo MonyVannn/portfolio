@@ -16,15 +16,15 @@ interface ProjectResultProps {
 
 const ProjectResult = ({ description, results }: ProjectResultProps) => {
   return (
-    <div className="mt-10 grid grid-cols-2 gap-20">
-      <h1 className="text-[#017167] text-5xl font-medium">
+    <div className="mt-10 lg:grid grid-cols-2 gap-20">
+      <h1 className="text-[#017167] text-4xl md:text-5xl font-medium">
         Res<span className={RoboroughCFItalic.className}>ults</span>
       </h1>
       <div>
-        <Asterisk className="w-10 h-10" />
+        <Asterisk className="w-10 h-10 hidden lg:block" />
         <p
           className={cn(
-            "mt-5 text-lg font-medium -tracking-[0.040rem]",
+            "mt-5 text-base md:text-lg font-medium -tracking-[0.040rem]",
             montreal.className
           )}
         >

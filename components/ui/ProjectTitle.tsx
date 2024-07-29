@@ -8,7 +8,9 @@ const ProjectTitle = ({ title, description, tags }: ProjectTitleProps) => {
   return (
     <div>
       <div className="flex items-start justify-between">
-        <h1 className="text-8xl font-bold w-full text-[#017167]">{title}</h1>
+        <h1 className="text-6xl md:text-8xl font-bold w-full text-[#017167]">
+          {title}
+        </h1>
         <div className="uppercase">
           {tags.map((tag, index) => (
             <p key={index}>{tag}</p>

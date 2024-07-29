@@ -12,7 +12,7 @@ const Navbar = () => {
           <p className="-mt-1">collaborations and offers</p>
         </div>
       </div>
-      <div className="w-1/3 md:block hidden">
+      <div className="w-1/3 hidden md:block">
         <a href="/">
           <Image
             src="/logo.png"
@@ -24,14 +24,6 @@ const Navbar = () => {
         </a>
       </div>
       <div className="relative">
-        <div className="w-1/3">
-          <a
-            href="/"
-            className="md:hidden block md:text-2xl lg:text-4xl font-bold whitespace-nowrap mr-14"
-          >
-            ZEN様
-          </a>
-        </div>
         <Header />
       </div>
     </div>
