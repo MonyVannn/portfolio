@@ -15,20 +15,6 @@ const RoboroughCFItalic = localFont({
 
 const projects = [
   {
-    title: "REQUEST ENGINE",
-    src: "ecom-main.jpeg",
-    description: "Development",
-    color: "#706D63",
-    href: "request-engine",
-  },
-  {
-    title: "ID MANAGEMENT SYSTEM",
-    src: "card-main.jpeg",
-    description: "Development",
-    color: "#CDD8E6",
-    href: "id-management-system",
-  },
-  {
     title: "LOODEN CREATIVE",
     src: "looden-main.jpeg",
     description: "Design & Development",
@@ -41,6 +27,20 @@ const projects = [
     description: "Design & Development",
     color: "#EFE8D3",
     href: "theng-portfolio",
+  },
+  {
+    title: "REQUEST ENGINE",
+    src: "ecom-main.jpeg",
+    description: "Development",
+    color: "#706D63",
+    href: "request-engine",
+  },
+  {
+    title: "ID MANAGEMENT SYSTEM",
+    src: "card-main.jpeg",
+    description: "Development",
+    color: "#CDD8E6",
+    href: "id-management-system",
   },
 ];
 
