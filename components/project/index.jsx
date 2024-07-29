@@ -7,29 +7,13 @@ const RoboroughCFItalic = localFont({
   src: "../../public/fonts/roxboroughitalic.woff2",
 });
 
-export default function Project({
-  index,
-  title,
-  setModal,
-  description,
-  hoverData,
-}) {
-  const timeoutRef = useRef(null);
-
+export default function Project({ index, title, setModal, description }) {
   const handleMouseEnter = () => {
-    timeoutRef.current = setTimeout(() => {
-      setModal({ active: true, index });
-      hoverData(title);
-    }, 300); // 2 seconds delay
+    setModal({ active: true, index });
   };
 
   const handleMouseLeave = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
     setModal({ active: false, index });
-    hoverData("");
   };
 
   return (

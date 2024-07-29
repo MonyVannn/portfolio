@@ -52,22 +52,6 @@ const variants = {
 
 const Works = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
-  const [work, setWork] = useState(["", ""]);
-
-  const setWorkData = (name: string) => {
-    const words = name.split(" ");
-    let firstHalf = "";
-    let secondHalf = "";
-
-    if (words.length > 1) {
-      firstHalf = words.slice(0, words.length - 1).join(" ");
-      secondHalf = words[words.length - 1];
-    } else {
-      firstHalf = name;
-    }
-
-    setWork([firstHalf, secondHalf]);
-  };
 
   return (
     <div className="max-h-screen flex flex-col justify-between">
@@ -77,52 +61,23 @@ const Works = () => {
             SELECTED WORKS I HAVE DONE SINCE 2022
           </h3>
         </div>
-        <AnimatePresence mode={"wait"}>
-          {work[0] ? (
-            <motion.div
-              key={work[0]}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              variants={variants}
-              className="flex flex-col items-center justify-center md:gap-5 gap-2 h-[200px] md:w-[600px]"
-            >
-              <p className="md:text-[57px] lg:text-[60px] text-[40px] text-[#007167] text-center leading-[50px]">
-                {work[0]}{" "}
-                <span
-                  className={cn(
-                    "text-[#FF8031] -pt-10",
-                    RoboroughCFItalic.className
-                  )}
-                >
-                  <br />
-                  {work[1]}
-                </span>
-              </p>
-            </motion.div>
-          ) : (
-            <motion.div
-              key={work[0]}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              variants={variants}
-              className="flex items-center justify-center md:gap-5 gap-2 h-[200px] md:w-[600px]"
-            >
-              <h1
-                className={cn(
-                  "text-[57px] lg:text-[110px] text-[#007167]",
-                  RoboroughCFItalic.className
-                )}
-              >
-                My
-              </h1>
-              <h1 className="text-[57px] lg:text-[100px] text-[#007167]">
-                Works
-              </h1>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <motion.div
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          variants={variants}
+          className="flex items-center justify-center md:gap-5 gap-2 h-[200px] md:w-[600px]"
+        >
+          <h1
+            className={cn(
+              "text-[57px] lg:text-[110px] text-[#007167]",
+              RoboroughCFItalic.className
+            )}
+          >
+            My
+          </h1>
+          <h1 className="text-[57px] lg:text-[100px] text-[#007167]">Works</h1>
+        </motion.div>
         <div className="lg:hidden block">
           <h3 className="w-[200px] text-[#FF8031] uppercase text-[14px] 2xl:text-[18px] leading-5 text-center text-balance">
             SELECTED WORKS I HAVE DONE SINCE 2022
@@ -140,7 +95,6 @@ const Works = () => {
             return (
               <Link href={`/works/${project.href}`} key={index}>
                 <Project
-                  hoverData={setWorkData}
                   index={index}
                   title={project.title}
                   setModal={setModal}
