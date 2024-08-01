@@ -28,7 +28,7 @@ export default function Home() {
             <div
               className={cn(
                 `${styles.burger} ${isActive ? styles.burgerActive : ""}`,
-                "absolute h-20 w-20 p-10 mt-3 rounded-full bg-white/0 transition-colors hover:bg-white/20"
+                "absolute h-20 w-20 p-10 mt-3 rounded-full bg-white/0 transition-colors hover:bg-white/20 lg:hidden"
               )}
             ></div>
           </div>
