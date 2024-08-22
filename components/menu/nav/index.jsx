@@ -17,6 +17,10 @@ const navItems = [
     href: "/works",
   },
   {
+    title: "Blog",
+    href: "https://blog.monyvann.site",
+  },
+  {
     title: "About",
     href: "/about",
   },

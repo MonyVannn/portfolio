@@ -247,7 +247,7 @@ const AboutPage = () => {
       </motion.div>
 
       {/* EXPERIENCES & EDUCATION */}
-      <div className="py-20 px-8 md:px-20 lg:px-40 mt-[200px] lg:flex items-start justify-between ">
+      <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
         <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
           EXPERIENCES
         </h1>
@@ -279,7 +279,7 @@ const AboutPage = () => {
           <div>
             <div className="w-full h-[2px] bg-[#292929]" />
             <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
+              <div className="w-1/2">
                 <h2>FRONT-END DEVELOPER INTERN</h2>
                 <h3
                   className={cn(
@@ -302,7 +302,7 @@ const AboutPage = () => {
           </div>
           <div>
             <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="fmd:lex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
+            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
               <div>
                 <h2>PROGRAMMER FACILITATOR (SUMMER JOB)</h2>
                 <h3
@@ -347,7 +347,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="py-20 px-8 md:px-20 lg:px-40 mt-[200px] lg:flex items-start justify-between ">
+      <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
         <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
           EDUCATION
         </h1>
@@ -413,6 +413,53 @@ const AboutPage = () => {
                 <p className="text-base md:text-xl md:mt-2">
                   Phnom Penh, Cambodia
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
+        <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
+          CREDITS
+        </h1>
+        <div className="mt-10 lg:mt-0 lg:w-2/3">
+          <div>
+            <div className="w-full h-[2px] bg-[#292929]" />
+            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
+              <div>
+                <a
+                  className="hover:underline"
+                  href="https://sketchfab.com/3d-models/tenhun-falling-spaceman-fanart-9fd80b6a259f41fd99e6f56eee686dc5"
+                  target="_blank"
+                >
+                  Tenhun Falling spaceman
+                </a>
+                <h3
+                  className={cn(
+                    RoboroughCFItalic.className,
+                    "text-lg md:text-2xl md:mt-2"
+                  )}
+                >
+                  By{" "}
+                  <a
+                    className="hover:underline"
+                    href="https://sketchfab.com/wallmasterr"
+                    target="_blank"
+                  >
+                    wallmasterr
+                  </a>
+                </h3>
+              </div>
+              <div className="text-right mt-8 md:mt-0">
+                <h2 className="text-lg md:text-2xl">
+                  <a
+                    className="hover:underline"
+                    href="https://sketchfab.com/feed"
+                    target="_blank"
+                  >
+                    Sketchfab
+                  </a>
+                </h2>
               </div>
             </div>
           </div>
