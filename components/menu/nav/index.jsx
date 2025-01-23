@@ -18,7 +18,7 @@ const navItems = [
   },
   {
     title: "Blog",
-    href: "https://blog.monyvann.site",
+    href: "https://mony-blog.vercel.app",
   },
   {
     title: "About",
