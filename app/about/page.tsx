@@ -263,7 +263,7 @@ const AboutPage = () => {
                     "text-lg md:text-2xl md:mt-2"
                   )}
                 >
-                  AMERICAN UNIVERSITY OF PHNOM PENH
+                  American University of Phnom Penh
                 </h3>
               </div>
               <div className="text-right mt-8 md:mt-0">
@@ -287,7 +287,7 @@ const AboutPage = () => {
                     "text-lg md:text-2xl md:mt-2"
                   )}
                 >
-                  MINISTRY OF INTERIOR
+                  Ministry of Interior
                 </h3>
               </div>
               <div className="text-right mt-8 md:mt-0">
@@ -304,14 +304,14 @@ const AboutPage = () => {
             <div className="w-full h-[2px] bg-[#292929]" />
             <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
               <div>
-                <h2>PROGRAMMER FACILITATOR (SUMMER JOB)</h2>
+                <h2>FACILITATOR (SUMMER JOB)</h2>
                 <h3
                   className={cn(
                     RoboroughCFItalic.className,
                     "text-lg md:text-2xl md:mt-2"
                   )}
                 >
-                  SNOOPEDU
+                  Snoop-Edu
                 </h3>
               </div>
               <div className="text-right mt-8 md:mt-0">
@@ -333,7 +333,7 @@ const AboutPage = () => {
                     "text-lg md:text-2xl md:mt-2"
                   )}
                 >
-                  FREELANCING
+                  Freelancing
                 </h3>
               </div>
               <div className="text-right mt-8 md:mt-0">
@@ -383,7 +383,7 @@ const AboutPage = () => {
                     "text-lg md:text-2xl md:mt-2"
                   )}
                 >
-                  Bachelor of Science in Information Technology Management
+                  Bachelor of Science in ITM
                 </h3>
               </div>
               <div className="text-right mt-8 md:mt-0">
