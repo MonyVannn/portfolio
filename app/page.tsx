@@ -90,13 +90,13 @@ export default function Home() {
         <div className="flex flex-col items-center space-y-12">
           <Star />
           <h1 className="w-[300px] text-[#FF8031] uppercase text-sm 2xl:text-lg leading-5  text-center text-balance">
-            MONYVANN (HE/HIM) IS AN INDEPENDENT WEB-DEVELOPER CURRENTLY IN HAYS,
-            KS, USA
+            MONYVANN IS AN INDEPENDENT WEB-DEVELOPER CURRENTLY IN HAYS, KANSAS
+            USA
           </h1>
         </div>
         <div className="lg:hidden block mt-6">
           <h1 className="w-[300px] leading-5 text-[#FF8031] uppercase text-sm text-center ">
-            PASSIONATE ABOUT CREATING UNFORGETTABLE AND BEAUTIFUL DIGITAL
+            DEDICATED TO CRAFTING MEMORABLE AND VISUALLY STUNNING DIGITAL
             EXPERIENCES.
           </h1>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="lg:flex hidden flex-col items-center space-y-12">
           <Star />
           <h1 className="w-[300px] leading-5 text-[#FF8031] uppercase text-sm 2xl:text-lg text-center text-balance">
-            PASSIONATE ABOUT CREATING UNFORGETTABLE AND BEAUTIFUL DIGITAL
+            DEDICATED TO CRAFTING MEMORABLE AND VISUALLY STUNNING DIGITAL
             EXPERIENCES.
           </h1>
         </div>

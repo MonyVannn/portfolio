@@ -247,107 +247,141 @@ const AboutPage = () => {
       </motion.div>
 
       {/* EXPERIENCES & EDUCATION */}
-      <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
-        <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
-          EXPERIENCES
-        </h1>
-        <div className="mt-10 lg:mt-0 lg:w-2/3">
-          <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
-                <h2>WEB DEVELOPER</h2>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  American University of Phnom Penh
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className=" text-lg md:text-2xl">
-                  APRIL, 2024 - CURRENTLY
-                </h2>
-                <p className="text-base md:text-xl md:mt-2">
-                  Phnom Penh, Cambodia
-                </p>
-              </div>
+      <div className="py-20 px-8 md:px-20 mt-[200px]">
+        <div className="w-full flex items-center justify-between gap-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
+            EXPERIENCES.
+          </h1>
+          <div className="w-full h-[2px] bg-[#292929]" />
+        </div>
+        <div>
+          <div className="md:flex items-start justify-between text-2xl md:text-4xl pt-8 md:pt-12 text-[#292929]">
+            <div>
+              <h2>WEB DEVELOPER</h2>
+              <h3
+                className={cn(
+                  RoboroughCFItalic.className,
+                  "text-lg md:text-2xl md:mt-2"
+                )}
+              >
+                American University of Phnom Penh
+              </h3>
+            </div>
+            <div className="text-right mt-8 md:mt-0">
+              <h2 className=" text-lg md:text-2xl">APRIL, 2024 - CURRENTLY</h2>
+              <p className="text-base md:text-xl md:mt-2">
+                Phnom Penh, Cambodia
+              </p>
             </div>
           </div>
-          <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div className="w-1/2">
-                <h2>FRONT-END DEVELOPER INTERN</h2>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  Ministry of Interior
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className="text-lg md:text-2xl">
-                  JANUARY, 2024 - APRIL, 2024
-                </h2>
-                <p className="text-base md:text-xl md:mt-2">
-                  Phnom Penh, Cambodia
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
-                <h2>FACILITATOR (SUMMER JOB)</h2>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  Snoop-Edu
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className="text-lg md:text-2xl">JUNE, 2023 - JULY, 2023</h2>
-                <p className="text-base md:text-xl md:mt-2">
-                  Phnom Penh, Cambodia
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
-                <h2>SOFTWARE DEVELOPER</h2>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  Freelancing
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className="text-lg md:text-2xl">2020 - 2022</h2>
-                <p className="text-base md:text-xl md:mt-2">
-                  Phnom Penh, Cambodia
-                </p>
-              </div>
-            </div>
-            <div className="w-full h-[2px] bg-[#292929]" />
+          <div className="pb-8 md:pb-12 mt-4 text-lg">
+            <p>
+              Developed a comprehensive ID Management and Request Engine web
+              application using Vue.js, JavaScript, and PHP, enhancing the
+              system with a modern UX/UI and improved codebase. Collaborated
+              with a team of four to streamline development processes, achieving
+              a 15% reduction in project completion times.
+            </p>
           </div>
         </div>
+        <div>
+          <div className="w-full h-[1px] bg-[#292929]" />
+          <div className="md:flex items-start justify-between text-2xl md:text-4xl pt-8 md:pt-12 text-[#292929]">
+            <div className="w-1/2">
+              <h2>FRONT-END DEVELOPER INTERN</h2>
+              <h3
+                className={cn(
+                  RoboroughCFItalic.className,
+                  "text-lg md:text-2xl md:mt-2"
+                )}
+              >
+                Ministry of Interior
+              </h3>
+            </div>
+            <div className="text-right mt-8 md:mt-0">
+              <h2 className="text-lg md:text-2xl">
+                JANUARY, 2024 - APRIL, 2024
+              </h2>
+              <p className="text-base md:text-xl md:mt-2">
+                Phnom Penh, Cambodia
+              </p>
+            </div>
+          </div>
+          <div className="pb-8 md:pb-12 mt-4 text-lg">
+            <p>
+              Created up to 10 responsive web pages using Vue.js and Laravel,
+              implementing UX/UI designs while optimizing frontend-to-backend
+              connections for enhanced system performance. Worked
+              collaboratively with a team of three to ensure the successful
+              completion of the project.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div className="w-full h-[1px] bg-[#292929]" />
+          <div className="md:flex items-start justify-between text-2xl md:text-4xl pt-8 md:pt-12 text-[#292929]">
+            <div>
+              <h2>FACILITATOR (SUMMER JOB)</h2>
+              <h3
+                className={cn(
+                  RoboroughCFItalic.className,
+                  "text-lg md:text-2xl md:mt-2"
+                )}
+              >
+                Snoop-Edu
+              </h3>
+            </div>
+            <div className="text-right mt-8 md:mt-0">
+              <h2 className="text-lg md:text-2xl">JUNE, 2023 - JULY, 2023</h2>
+              <p className="text-base md:text-xl md:mt-2">
+                Phnom Penh, Cambodia
+              </p>
+            </div>
+          </div>
+          <div className="pb-8 md:pb-12 mt-4 text-lg">
+            <p>
+              Instructed 12 to 15 students aged 10-14 in micro:bit programming
+              and block coding, designing and delivering 12 engaging lessons
+              that progressed students from beginners to competent coders.
+              Guided them through two major projects, overseeing the entire
+              process from inception to completion.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div className="w-full h-[1px] bg-[#292929]" />
+          <div className="md:flex items-start justify-between text-2xl md:text-4xl pt-8 md:pt-12 text-[#292929]">
+            <div>
+              <h2>SOFTWARE DEVELOPER</h2>
+              <h3
+                className={cn(
+                  RoboroughCFItalic.className,
+                  "text-lg md:text-2xl md:mt-2"
+                )}
+              >
+                Freelancing
+              </h3>
+            </div>
+            <div className="text-right mt-8 md:mt-0">
+              <h2 className="text-lg md:text-2xl">2020 - 2022</h2>
+              <p className="text-base md:text-xl md:mt-2">
+                Phnom Penh, Cambodia
+              </p>
+            </div>
+          </div>
+          <div className="pb-8 md:pb-12 mt-4 text-lg">
+            <p>
+              Successfully completed approximately five projects, each lasting
+              3-5 months, while maintaining a 100% on-time completion rate and
+              ensuring 80% of projects met client expectations. Collaborated
+              with five different clients and utilized four programming
+              languages: C++, Python, Java, and C#.
+            </p>
+          </div>
+          <div className="w-full h-[1px] bg-[#292929]" />
+        </div>
       </div>
-      <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
+      {/* <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
         <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
           EDUCATION
         </h1>
@@ -417,51 +451,49 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
-        <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
-          CREDITS
-        </h1>
-        <div className="mt-10 lg:mt-0 lg:w-2/3">
+      </div> */}
+      <div className="py-20 px-8 md:px-20 mt-[200px]">
+        <div className="w-full flex items-center justify-between gap-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
+            CREDIT.
+          </h1>
+          <div className="w-full h-[2px] bg-[#292929]" />
+        </div>
+        <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
           <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
-                <a
-                  className="hover:underline"
-                  href="https://sketchfab.com/3d-models/tenhun-falling-spaceman-fanart-9fd80b6a259f41fd99e6f56eee686dc5"
-                  target="_blank"
-                >
-                  Tenhun Falling spaceman
-                </a>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  By{" "}
-                  <a
-                    className="hover:underline"
-                    href="https://sketchfab.com/wallmasterr"
-                    target="_blank"
-                  >
-                    wallmasterr
-                  </a>
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className="text-lg md:text-2xl">
-                  <a
-                    className="hover:underline"
-                    href="https://sketchfab.com/feed"
-                    target="_blank"
-                  >
-                    Sketchfab
-                  </a>
-                </h2>
-              </div>
-            </div>
+            <a
+              className="hover:underline"
+              href="https://sketchfab.com/3d-models/tenhun-falling-spaceman-fanart-9fd80b6a259f41fd99e6f56eee686dc5"
+              target="_blank"
+            >
+              Tenhun Falling spaceman
+            </a>
+            <h3
+              className={cn(
+                RoboroughCFItalic.className,
+                "text-lg md:text-2xl md:mt-2"
+              )}
+            >
+              By{" "}
+              <a
+                className="hover:underline"
+                href="https://sketchfab.com/wallmasterr"
+                target="_blank"
+              >
+                wallmasterr
+              </a>
+            </h3>
+          </div>
+          <div className="text-right mt-8 md:mt-0">
+            <h2 className="text-lg md:text-2xl">
+              <a
+                className="hover:underline"
+                href="https://sketchfab.com/feed"
+                target="_blank"
+              >
+                Sketchfab
+              </a>
+            </h2>
           </div>
         </div>
       </div>

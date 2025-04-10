@@ -50,7 +50,7 @@ const Model = ({ z }) => {
       undefined,
       (error) => {
         console.error(error);
-      },
+      }
     );
 
     camera.position.z = z;
