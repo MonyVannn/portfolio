@@ -13,7 +13,7 @@ const RoboroughCFItalic = localFont({
 export default function Home() {
   return (
     <div className="h-screen flex flex-col justify-between relative">
-      <div className="flex items-center justify-center md:gap-5 gap-2 h-[200px] mt-[100px]">
+      <div className="flex items-center justify-center md:gap-5 gap-2 h-[200px] mt-[300px] lg:mt-[100px]">
         <h1
           className={cn(
             "md:text-[120px] lg:text-[200px] text-[70px] text-[#007167]",
