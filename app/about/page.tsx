@@ -95,7 +95,7 @@ const AboutPage = () => {
               />
             </svg>
           </motion.span>{" "}
-          <motion.span variants={itemVariants}>IN CAMBODIA WHO</motion.span>{" "}
+          <motion.span variants={itemVariants}>IN BOSTON WHO</motion.span>{" "}
           <br />
           <motion.span variants={itemVariants} className="relative">
             L <Circle className="absolute top-6 left-12" />

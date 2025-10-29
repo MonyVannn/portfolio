@@ -41,7 +41,7 @@ const CircleLine = ({ className }: CircleLineProps) => {
         width="100%"
         height="100%"
         transform="translate(50 50)"
-        stroke-width="2"
+        strokeWidth="2"
         // style="transition: all 0.3s ease 0s;"
         stroke="url(#sw-gradient)"
       ></path>{" "}

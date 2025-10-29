@@ -36,7 +36,7 @@ export default function Home() {
           viewBox="0 0 333.557 333.557"
           transform="rotate(90)"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
             stroke-linecap="round"
@@ -65,7 +65,7 @@ export default function Home() {
           viewBox="0 0 333.557 333.557"
           transform="rotate(90)"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
             stroke-linecap="round"

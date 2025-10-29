@@ -13,15 +13,16 @@ const Navbar = () => {
         </div>
       </div>
       <div className="w-1/3 hidden md:block">
-        <a href="/">
-          <Image
+        {/* <a href="/" clas>
+          {/* <Image
             src="/logo.png"
             alt="logo"
             width={60}
             height={60}
             className="w-auto h-auto"
-          />
-        </a>
+          /> */}
+        {/* MONY
+        </a> */}
       </div>
       <div className="relative">
         <Header />
