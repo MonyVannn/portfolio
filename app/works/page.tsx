@@ -5,8 +5,7 @@ import localFont from "next/font/local";
 import { useState } from "react";
 import Project from "@/components/project";
 import Modal from "@/components/modal";
-import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const RoboroughCFItalic = localFont({
@@ -14,6 +13,13 @@ const RoboroughCFItalic = localFont({
 });
 
 const projects = [
+  {
+    title: "SKILLBRIDGE",
+    src: "skillbridge-main.png",
+    description: "Full-Stack Development",
+    color: "#61605e",
+    href: "skillbridge",
+  },
   {
     title: "LOODEN CREATIVE",
     src: "looden-main.jpeg",
