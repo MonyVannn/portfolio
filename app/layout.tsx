@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/header";
+import NProgressBar from "@/components/NProgressBar";
 
 const roobert = localFont({ src: "../public/fonts/RoobertRegular.ttf" });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roobert.className}>
+        <NProgressBar />
         <Navbar />
         {children}
       </body>

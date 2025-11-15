@@ -21,8 +21,10 @@ const SkillBridgePage = () => {
         <ProjectContainer>
           <ProjectTitle
             title="SKILLBRIDGE"
-            description="A dynamic micro-project marketplace platform that bridges the gap between new graduates seeking practical experience and businesses/nonprofits needing short-term, specific tasks completed. Built to empower emerging talent through verifiable portfolio building. Visit here @ https://skillbridge.dev/"
+            description="A dynamic micro-project marketplace platform that bridges the gap between new graduates seeking practical experience and businesses/nonprofits needing short-term, specific tasks completed. Built to empower emerging talent through verifiable portfolio building."
             tags={["Next.js", "TypeScript", "MongoDB", "Prisma", "Clerk.js"]}
+            github="https://github.com/MonyVannn/csci441-teamc-skillbridge/"
+            website="https://skillbridge.dev/"
           />
           <Image
             src={SkillbridgeHome}

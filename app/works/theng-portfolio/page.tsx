@@ -22,6 +22,8 @@ const ThengPortfolioPage = () => {
             description="
           A portfolio website for photographer Theng. The website is designed to be minimalistic and clean to showcase the photographer's work."
             tags={["React", "TypeScript", "TailwindCSS"]}
+            github="https://github.com/MonyVann/theng-portfolio"
+            website="https://theng-portfolio.vercel.app"
           />
           <Image
             src={ThengMain}

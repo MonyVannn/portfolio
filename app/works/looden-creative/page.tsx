@@ -23,6 +23,8 @@ const LoodenCreativePage = () => {
             description="
               An agency that provides creative solutions for businesses, including branding, web design, and marketing services."
             tags={["Nextjs", "Typescript", "Tailwindcss"]}
+            github="https://github.com/MonyVannn/looden-creative-agency"
+            website="https://looden.vercel.app/"
           />
           <Image
             src={LoodenMain}

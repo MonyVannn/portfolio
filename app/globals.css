@@ -7,3 +7,29 @@ body {
   background-color: rgb(235, 235, 235);
   background-image: url("/topography.svg");
 }
+
+/* NProgress Custom Styles */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #ff8031;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #ff8031, 0 0 5px #ff8031;
+  opacity: 1;
+  transform: rotate(3deg) translate(0px, -4px);
+}

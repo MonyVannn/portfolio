@@ -19,6 +19,8 @@ const projects = [
     description: "Full-Stack Development",
     color: "#61605e",
     href: "skillbridge",
+    github: "https://github.com/MonyVann/csci441-teamc-skillbridge",
+    website: "https://skillbridge.dev/",
   },
   {
     title: "LOODEN CREATIVE",
@@ -26,6 +28,7 @@ const projects = [
     description: "Design & Development",
     color: "#8C8C8C",
     href: "looden-creative",
+    website: "https://https://looden.vercel.app/",
   },
   {
     title: "THENG PORTFOLIO",
@@ -33,6 +36,7 @@ const projects = [
     description: "Design & Development",
     color: "#EFE8D3",
     href: "theng-portfolio",
+    website: "https://theng-portfolio.vercel.app/",
   },
   {
     title: "REQUEST ENGINE",

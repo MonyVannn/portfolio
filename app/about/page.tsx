@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 import Circle from "@/components/icons/circle";
 import ProjectFooter from "@/components/ui/ProjectFooter";
+import Image from "next/image";
 
 const RoboroughCFItalic = localFont({
   src: "../../public/fonts/roxboroughitalic.woff2",
@@ -245,8 +246,7 @@ const AboutPage = () => {
           <motion.span variants={itemVariants}>WEBSITES.</motion.span>
         </motion.h1>
       </motion.div>
-
-      {/* EXPERIENCES & EDUCATION */}
+      {/* EXPERIENCES */}
       <div className="py-20 px-8 md:px-20 mt-[200px]">
         <div className="w-full flex items-center justify-between gap-6">
           <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
@@ -268,7 +268,9 @@ const AboutPage = () => {
               </h3>
             </div>
             <div className="text-right mt-8 md:mt-0">
-              <h2 className=" text-lg md:text-2xl">APRIL, 2024 - CURRENTLY</h2>
+              <h2 className=" text-lg md:text-2xl">
+                APRIL, 2024 - DECEMBER, 2024
+              </h2>
               <p className="text-base md:text-xl md:mt-2">
                 Phnom Penh, Cambodia
               </p>
@@ -381,77 +383,6 @@ const AboutPage = () => {
           <div className="w-full h-[1px] bg-[#292929]" />
         </div>
       </div>
-      {/* <div className="py-20 px-8 md:px-20 mt-[200px] lg:flex items-start justify-between ">
-        <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
-          EDUCATION
-        </h1>
-        <div className="mt-10 lg:mt-0 lg:w-2/3">
-          <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
-                <h2>Fort Hays State University</h2>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  Bachelor of Science in Computer Science
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className="text-lg md:text-2xl">2022 - CURRENTLY</h2>
-                <p className="text-base md:text-xl md:mt-2">Kansas, USA</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
-                <h2>American University of Phnom Penh</h2>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  Bachelor of Science in ITM
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className="text-lg md:text-2xl">2022 - CURRENTLY</h2>
-                <p className="text-base md:text-xl md:mt-2">
-                  Phnom Penh, Cambodia
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="w-full h-[2px] bg-[#292929]" />
-            <div className="md:flex items-start justify-between text-2xl md:text-4xl py-8 md:py-12 text-[#292929]">
-              <div>
-                <h2>IT Step Academy</h2>
-                <h3
-                  className={cn(
-                    RoboroughCFItalic.className,
-                    "text-lg md:text-2xl md:mt-2"
-                  )}
-                >
-                  Associate Degree in Software Development
-                </h3>
-              </div>
-              <div className="text-right mt-8 md:mt-0">
-                <h2 className="text-lg md:text-2xl">2017 - 2020</h2>
-                <p className="text-base md:text-xl md:mt-2">
-                  Phnom Penh, Cambodia
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="py-20 px-8 md:px-20 mt-[200px]">
         <div className="w-full flex items-center justify-between gap-6">
           <h1 className="text-4xl md:text-6xl font-bold text-[#292929]">
