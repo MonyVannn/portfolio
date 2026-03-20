@@ -14,6 +14,15 @@ const RoboroughCFItalic = localFont({
 
 const projects = [
   {
+    title: "SKY ALLIANCE",
+    src: "skyy-main.png",
+    description: "Design & Development",
+    color: "#5B7C99",
+    href: "sky-alliance",
+    github: "https://github.com/MonyVannn",
+    website: "https://www.skyallianceinc.com/",
+  },
+  {
     title: "SKILLBRIDGE",
     src: "skillbridge-main.png",
     description: "Full-Stack Development",
@@ -81,7 +90,7 @@ const Works = () => {
           <h1
             className={cn(
               "text-[57px] lg:text-[110px] text-[#007167]",
-              RoboroughCFItalic.className
+              RoboroughCFItalic.className,
             )}
           >
             My
